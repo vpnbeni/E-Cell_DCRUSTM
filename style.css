@@ -1,0 +1,49 @@
+html{
+    padding: 0 !important;
+    margin: 0!important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.lg_font {
+  font-size: 38px;
+}
+.whoWeAre,.intro,.whatWeDo{
+  height: 90vh !important;
+}
+@media only screen and (max-width: 600px) {
+
+  body {
+    align-items: center !important;
+  }
+  .main_body {
+    margin: 0 0 0 3vw !important;
+  }
+  .ecell_logo {
+    max-height: 38px !important ;
+  }
+  .cover_photo {
+    width: 80vw !important;
+    margin-bottom: 5vw;
+  }
+  .intro {
+    background-color: white !important;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+  .getStarted {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .whoWeAre,.intro,.whatWeDo{
+    height: auto !important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .lg_font {
+    font-size: 33px !important;
+  }
+}

@@ -1,156 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Synergy</title>
-    <script
-      src="https://kit.fontawesome.com/bb8b9c6a9c.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body class="">
-    <!-- top nav bar -->
-    <div class="container px-5 pt-3 d-grid">
-      <div class="row">
-        <!-- logo -->
-        <div class="col-3">
-          <img
-            class=""
-            type="button"
-            src="https://i.postimg.cc/sxwFwvCz/dark-blue-logo.png"
-            alt="synergy_logo"
-            style="max-height: 75px"
-          />
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+  <title>E-Cell DcrustM</title>
+  <script src="https://kit.fontawesome.com/bb8b9c6a9c.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+</head>
+
+<body class=" font-monospace bg-light">
+  <!-- top nav bar -->
+  <div class="container-fluid .bg-light.bg-gradient bg-light px-lg-5 py-2 d-grid">
+    <div class="row">
+      <!-- logo -->
+      <div class="col-lg-3 col-10 ps-lg-3 ">
+        <img class="ecell_logo" type="button" src="https://i.ibb.co/b2zh7Wm/ecell-logo-removebg.png" alt="synergy_logo"
+          style="max-height: 50px ;" />
+        <!-- <img class="ecell_logo" type="button" src="https://i.postimg.cc/sxwFwvCz/dark-blue-logo.png" alt="synergy_logo"
+          style="max-height: 75px" /> -->
+      </div>
+      <!-- navtabs -->
+      <div class="col-lg-9  d-none d-lg-flex align-items-center justify-content-center">
+        <!-- Home -->
+        <div class="dropdown mx-2">
+          <button class="btn btn-white dropdown-toggle" type="button" id="homeDropDown" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Home
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="homeDropDown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
         </div>
-        <!-- navtabs -->
-        <div class="col-9 d-flex align-items-center justify-content-center">
-          <!-- home -->
-          <div class="dropdown mx-2">
-            <button
-              class="btn btn-white dropdown-toggle"
-              type="button"
-              id="homeDropDown"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Home
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="homeDropDown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </div>
-          <!-- home -->
-          <div class="dropdown mx-2">
-            <button
-              class="btn btn-white dropdown-toggle"
-              type="button"
-              id="homeDropDown"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Initiatives
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="homeDropDown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </div>
-          <!-- home -->
-          <div class="dropdown mx-2">
-            <button
-              class="btn btn-white dropdown-toggle"
-              type="button"
-              id="homeDropDown"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Our Team
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="homeDropDown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </div>
-          <!-- home -->
-          <div class="dropdown mx-2">
-            <button
-              class="btn btn-white dropdown-toggle"
-              type="button"
-              id="homeDropDown"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              About Us
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="homeDropDown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </div>
+        <!-- Initiatives -->
+        <div class="dropdown mx-2">
+          <button class="btn btn-white dropdown-toggle" type="button" id="homeDropDown" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Initiatives
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="homeDropDown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+        <!-- Our Team -->
+        <div class="dropdown mx-2">
+          <button class="btn btn-white dropdown-toggle" type="button" id="homeDropDown" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Our Team
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="homeDropDown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+        <!-- About Us -->
+        <div class="dropdown mx-2">
+          <button class="btn btn-white dropdown-toggle" type="button" id="homeDropDown" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            About Us
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="homeDropDown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
         </div>
       </div>
-    </div>
-    <!-- main body -->
-    <div class="container px-5 pt-5">
-      <span style="font-weight: bolder; font-size: 60px"
-        >E-Cell DCRUST,Murthal</span
-      >
-      <div class="d-grid mt-4">
-        <div class="row">
-          <div class="col">
-            <div class="" style="font-weight: 500; font-size: 38px">
-              Accelerate Your
-            </div>
-            <div class="text-primary" style="font-weight: 500; font-size: 38px">
-              Entrepreneurship |
-            </div>
-            <div class="" style="font-weight: 500; font-size: 38px">
-              Journey!
-            </div>
-            <p class="text-muted fs-5 mt-4" style="font-weight: 450">
-              Welcome to the entrepreneurship community of DCRUST,Murthal where
-              we ideate,innovate and incubate the future innovations of the
-              century!
-            </p>
-          </div>
-          <div class="col d-flex align-items-center justify-content-center">
-            <img
-              class=""
-              src="https://svgshare.com/i/i4h.svg"
-              alt="side_img"
-              style="max-width: 30vw"
-            />
-          </div>
-        </div>
+      <!-- mobile view dd -->
+      <div class="col-2 d-lg-none col">
+        <button class="btn btn-light " type="button" data-bs-toggle="collapse" data-bs-target="#menuCollapse"
+          aria-expanded="false" aria-controls="menuCollapse">
+          <i class="fa-solid fa-lg fa-bars"></i>
+        </button>
       </div>
-      <button type="button" class="btn fw-bold btn-primary btn-lg">
-        Get Started !
-      </button>
     </div>
 
-    <!-- main js -->
-    <script src="script.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  </div>
+  <!-- menu collapse dd -->
+  <div class="collapse bg-light" id="menuCollapse">
+    <div class="card card-body bg-light border-0">
+      <!-- Home -->
+      <p>
+        <a class="btn btn-light d-flex align-items-center justify-content-between" data-bs-toggle="collapse"
+          href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          <span>Home</span>
+          <span><i class="fa-solid fa-chevron-down"></i></span>
+        </a>
+
+      </p>
+      <!-- home dd -->
+      <div class="collapse " id="collapseExample">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item ">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+          <li class="list-group-item">A fourth item</li>
+          <li class="list-group-item">And a fifth one</li>
+        </ul>
+      </div>
+      <!-- initiativesCollapse -->
+      <p>
+        <a class="btn btn-light d-flex align-items-center justify-content-between" data-bs-toggle="collapse"
+          href="#initiativesCollapse" role="button" aria-expanded="false" aria-controls="initiativesCollapse">
+          <span>Initiatives</span>
+          <span><i class="fa-solid fa-chevron-down"></i></span>
+        </a>
+
+      </p>
+      <!-- initiativesCollapse dd -->
+      <div class="collapse " id="initiativesCollapse">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item ">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+          <li class="list-group-item">A fourth item</li>
+          <li class="list-group-item">And a fifth one</li>
+        </ul>
+      </div>
+      <!-- ourTeamCollapse -->
+      <p>
+        <a class="btn btn-light d-flex align-items-center justify-content-between" data-bs-toggle="collapse"
+          href="#ourTeamCollapse" role="button" aria-expanded="false" aria-controls="ourTeamCollapse">
+          <span>Out Team</span>
+          <span><i class="fa-solid fa-chevron-down"></i></span>
+        </a>
+
+      </p>
+      <!-- ourTeamCollapse dd -->
+      <div class="collapse " id="ourTeamCollapse">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item ">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+          <li class="list-group-item">A fourth item</li>
+          <li class="list-group-item">And a fifth one</li>
+        </ul>
+      </div>
+      <!-- aboutUsCollapse -->
+      <p>
+        <a class="btn btn-light d-flex align-items-center justify-content-between" data-bs-toggle="collapse"
+          href="#aboutUsCollapse" role="button" aria-expanded="false" aria-controls="aboutUsCollapse">
+          <span>About Us</span>
+          <span><i class="fa-solid fa-chevron-down"></i></span>
+        </a>
+
+      </p>
+      <!-- aboutUsCollapse dd -->
+      <div class="collapse " id="aboutUsCollapse">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item ">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+          <li class="list-group-item">A fourth item</li>
+          <li class="list-group-item">And a fifth one</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <!-- main body -->
+  <div class="main_body  p-lg-5 mx-lg-5 ">
+    <span class="d-none d-lg-flex ps-3" style="font-weight: bolder; font-size: 60px">E-Cell DCRUST,Murthal</span>
+    <!-- intro -->
+    <div class="intro d-grid mt-1 rounded  p-1">
+      <div class=" row">
+        <div class="col  order-sm-first order-last">
+          <div class=" lg_font" style="font-weight: 500; ">
+            Accelerate Your
+          </div>
+          <div class="text-primary lg_font" style="font-weight: 500; ">
+            Entrepreneurship|
+          </div>
+          <div class="lg_font" style="font-weight: 500; ">
+            Journey!
+          </div>
+          <p class="text-muted fs-5 mt-4" style="font-weight: 450">
+            Welcome to the entrepreneurship community of DCRUST,Murthal where
+            we ideate,innovate and incubate the future innovations of the
+            century!
+          </p>
+          <!-- get Started  -->
+          <button type="button" class="getStarted btn mt-lg-5 mt-3 fw-bold btn-primary btn-lg">
+            Get Started !
+          </button>
+        </div>
+        <!-- cover photo -->
+        <div class="col w-lg-100 d-flex align-items-center justify-content-center">
+          <img class="cover_photo " src="https://i.ibb.co/2nYGBzH/removal-ai-tmp-62aefd384821d-NX2-EWV.png"
+            alt="side_img" />
+        </div>
+      </div>
+    </div>
+
+    <!-- who are we -->
+    <!-- <p class="large-font d-none mt-lg-5 pt-lg-5  text-muted fs-5">
+      <div class="w-75">
+        <span class="fw-bold text-dark pb-lg-5" style="font-size: 55px ;">Who we are?</span>
+        <br>
+        <span class="w-75">
+        E-cell DCRUST,Murthal is an institute body run by the students of DCRUST
+        (Murthal) Haryana devoted to acting as a symbbiotic link between the
+        entrepreneurs of E-Cell and the existing startup ecosystem as well as
+        acting as a hub where all the startup can meet, collaborate and
+        innovate!
+        </span>
+      </div>
+    </p> -->
+    <!-- who are we -->
+    <div class="whoWeAre d-grid my-lg-5 py-lg-5 my-5 pt-lg-5 px-2">
+      <div class=" row">
+        <!-- cover photo -->
+        <div class="col  w-lg-100 d-flex align-items-center justify-content-center">
+          <img class="cover_photo " src="https://i.ibb.co/NsYWr24/who-we-are.png"
+            alt="side_img" />
+        </div>
+        <!-- text -->
+        <div class="col ">
+        <p class=" text-center  d-flex align-items-center justify-content-center">
+          <span class="fw-bold lg_font text-dark" >Who we are?</span>
+          <br />
+          <br />
+          <div class="d-flex fs-5 justify-content-center align-items-center">
+            <p class="fontNormal w-lg-75 text-center">
+            E-cell DCRUST,Murthal is an institute body run by the students of DCRUST
+            (Murthal) Haryana devoted to acting as a symbbiotic link between the
+            entrepreneurs of E-Cell and the existing startup ecosystem as well as
+            acting as a hub where all the startup can meet, collaborate and
+            innovate!
+            </p>
+          </div>
+        </p>
+      </div>
+      </div>
+    </div>
+    <!-- What we do -->
+    <div class="whatWeDo lg_font mt-lg-5 pt-lg-5 px-2">
+      <div class="row">
+        <div class=" col order-last order-sm-first">
+        <p class=" text-center d-flex justify-content-center">
+          <span class="fw-bold text-dark lg_font" >What we do?</span>
+          <br />
+        <div class="d-flex fs-5 justify-content-center align-items-center">
+          <p class="w-lg-75 text-center">
+            Through our vision of 'Learn, Build and Scale' we implement various
+            initiatives and events in DCRUST,Murthal to faster the
+            entrepreneurial minds and create a culture of enthralling startup
+            bound for success!
+          </p>
+        </div>
+        </p>
+        </div>
+        <!-- cover photo -->
+        <div class="col w-lg-100 d-flex align-items-center justify-content-center">
+          <img class="cover_photo " src="https://i.ibb.co/dMjKpWd/what-we-do.png"
+            alt="side_img" />
+        </div>
+      </div>
+    </div>
+    <!-- learn/build/scale -->
+    <div class="d-lg-flex justify-content-center align-items-center mt-5">
+      <!-- learn -->
+      <div class="card m-4 shadow">
+        <div class="card-header">
+          <span class="card-title fs-3">Learn</span>
+        </div>
+        <div class="card-body">
+          <p class="card-text">Through our vision of 'Learn, Build and Scale' we implement various
+            initiatives and events in DCRUST,Murthal to faster the
+            entrepreneurial</p>
+          <a href="#" class="btn btn-dark text-white">Learn More <i
+              class="fa-solid fa-right-long align-items-center text-primary"></i></a>
+        </div>
+      </div>
+      <!-- build -->
+      <div class="card m-4 shadow">
+        <div class="card-header">
+          <span class="card-title fs-3">Build</span>
+        </div>
+        <div class="card-body">
+          <p class="card-text">Through our vision of 'Learn, Build and Scale' we implement various
+            initiatives and events in DCRUST,Murthal to faster the
+            entrepreneurial</p>
+          <a href="#" class="btn btn-dark text-white">Learn More <i
+              class="fa-solid fa-right-long align-items-center text-primary"></i></a>
+        </div>
+      </div>
+      <!-- Scale -->
+      <div class="card m-4 shadow">
+        <div class="card-header">
+          <span class="card-title fs-3">Scale</span>
+        </div>
+        <div class="card-body">
+          <p class="card-text">Through our vision of 'Learn, Build and Scale' we implement various
+            initiatives and events in DCRUST,Murthal to faster the
+            entrepreneurial</p>
+          <a href="#" class="btn btn-dark text-white">Learn More <i
+              class="fa-solid fa-right-long align-items-center text-primary"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- hr -->
+    <hr style="height: 20px; color: black; margin-top: 5vh;">
+  </div>
+  <!-- footer -->
+  <footer class="mb-4">
+    <div class="m-5" >
+      <div class="d-grid w-lg-50">
+        <div class="d-lg-flex align-items-center justify-content-center">
+          <!-- contact us -->
+          <div class="mx-5">
+            <span class="fw-bold fs-3">Contact Us</span>
+            <br> <br>
+            <p class="text-muted">
+              Deenbandhu Chhotu Ram <br> University Of Science And Technology (Murthal) <br> Haryana India <br>
+              Pin:131027
+            </p>
+          </div>
+          <!-- important -->
+          <div class="mx-5">
+            <span class="fw-bold fs-3 ">Important</span>
+            <br> <br>
+            <p class="text-muted">
+              Home<br> Event<br> Blogs <br>
+              Initiatives <br>Galary
+            </p>
+          </div>
+          <!-- 3rd section -->
+          <div class="mx-5">
+            <br> <br><br>
+            <p class="text-muted">
+              Who we are ?<br>How E-Cell works <br> Meet the team <br>T&C <br><br>
+              <button type="button" class="btn btn-dark">Contact Us</button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- social handles -->
+    <div class="d-flex align-items-center justify-content-center">
+      <a href="#"><i class="fa-brands fs-1 m-lg-5 m-3 text-dark fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fs-1 m-lg-5 m-3 text-dark fa-youtube"></i></a>
+      <a href="#"><i class="fa-brands fs-1 m-lg-5 m-3 text-dark fa-linkedin-in"></i></a>
+      <a href="#"><i class="fa-brands fs-1 m-lg-5 m-3 text-dark fa-twitter"></i></a>
+    </div>
+  </footer>
+
+  <!-- main js -->
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
